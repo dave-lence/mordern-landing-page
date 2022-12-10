@@ -1,0 +1,918 @@
+/* line 1, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+* {
+  font-family: sans-serif, 'montserrat';
+  margin: 0;
+  padding: 0;
+  border: border-box;
+  scroll-behavior: smooth; }
+
+/* line 9, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+ul {
+  list-style: none; }
+
+/* line 13, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+a {
+  text-decoration: none; }
+
+/* line 17, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+h2 {
+  font-weight: 500;
+  font-size: 34px;
+  color: #283654;
+  margin-bottom: 60px; }
+
+/* line 24, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+h3 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 20px; }
+
+/* line 30, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+h4 {
+  font-size: 20px;
+  color: #283654;
+  margin-bottom: 0px; }
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(300px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(300px); } }
+
+/* line 56, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.slide-in {
+  animation: slide-in 500ms ease; }
+
+/* line 59, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.slide-out {
+  animation: slide-out 500ms ease; }
+
+/* line 64, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about, .services,
+.why, .photo-gallery,
+.testimonials, .team,
+.clients, .contact-us,
+footer {
+  padding: 50px 20px; }
+  @media (min-width: 900px) {
+    /* line 64, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .about, .services,
+    .why, .photo-gallery,
+    .testimonials, .team,
+    .clients, .contact-us,
+    footer {
+      padding: 100px 20px; } }
+
+/* line 76, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.mobile-bg {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  right: 0; }
+  /* line 84, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .mobile-bg i {
+    position: absolute;
+    color: #FFF;
+    font-size: 30px;
+    left: 0;
+    top: 20px; }
+  /* line 91, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .mobile-bg ul {
+    position: absolute;
+    padding: 20px;
+    width: 200px;
+    right: 0;
+    background-color: rgba(0, 123, 225, 0.7);
+    height: 100%; }
+  /* line 99, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .mobile-bg a {
+    color: white;
+    cursor: pointer;
+    font-weight: 400; }
+  /* line 105, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .mobile-bg li {
+    padding: 20px 0; }
+
+/* line 111, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+header {
+  height: 79px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: white;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); }
+  /* line 119, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  header nav {
+    display: flex;
+    align-items: center;
+    padding: 25px 10px; }
+    /* line 124, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    header nav img {
+      height: 25px; }
+    /* line 127, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    header nav i {
+      z-index: 6;
+      font-size: 30px;
+      flex: 1;
+      text-align: right; }
+      @media (min-width: 800px) {
+        /* line 127, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+        header nav i {
+          display: none !important; } }
+    /* line 137, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    header nav ul {
+      flex: 1;
+      justify-content: flex-end;
+      display: none; }
+      @media (min-width: 800px) {
+        /* line 137, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+        header nav ul {
+          display: flex; } }
+      /* line 145, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      header nav ul a {
+        color: #004289;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 15px;
+        margin-left: 15px; }
+
+/* line 157, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.hero {
+  padding: 150px 0;
+  background: url("/img/intro-bg.png") center bottom no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
+  /* line 164, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .hero .flex-row {
+    padding: 0px 32px;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      /* line 164, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .hero .flex-row {
+        flex-direction: row; } }
+    /* line 172, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .hero .flex-row h2 {
+      color: #fff;
+      font-size: 40px;
+      margin-bottom: 32px;
+      text-align: center; }
+      @media (min-width: 1000px) {
+        /* line 172, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+        .hero .flex-row h2 {
+          text-align: initial;
+          font-size: 48px; } }
+  /* line 183, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .hero .left {
+    flex: 1;
+    order: 2;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      /* line 183, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .hero .left {
+        order: 1; } }
+  /* line 192, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .hero .button {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    @media (min-width: 1000px) {
+      /* line 192, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .hero .button {
+        flex-direction: row;
+        padding: 10px 10px; } }
+  /* line 201, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .hero .btn {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 16px; }
+    @media (min-width: 1000px) {
+      /* line 201, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .hero .btn {
+        margin-right: 16px; } }
+  /* line 209, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .hero img {
+    display: flex;
+    flex: 1;
+    order: 1;
+    width: 50%; }
+    @media (min-width: 1000px) {
+      /* line 209, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .hero img {
+        order: 2; } }
+
+/* line 222, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about img {
+  width: 60%; }
+  @media (min-width: 900px) {
+    /* line 222, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .about img {
+      width: 100%; } }
+
+/* line 227, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about h2 {
+  text-align: center; }
+
+/* line 230, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about p {
+  line-height: 1.7; }
+
+/* line 233, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about .flex-row {
+  gap: 50px;
+  flex-direction: column; }
+  @media (min-width: 900px) {
+    /* line 233, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .about .flex-row {
+      flex-direction: row; } }
+
+/* line 240, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about .left, .about .right {
+  flex: 1; }
+
+/* line 244, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about .left .flex-row {
+  gap: 0;
+  flex-direction: column;
+  margin-top: 32px;
+  align-items: center; }
+  @media (min-width: 500px) {
+    /* line 244, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .about .left .flex-row {
+      flex-direction: row; } }
+
+/* line 253, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about .left .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px; }
+  @media (min-width: 500px) {
+    /* line 253, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .about .left .info {
+      margin-top: 0;
+      align-items: initial; } }
+  /* line 263, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .about .left .info p {
+    color: #444;
+    font-size: 14px; }
+
+/* line 269, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about .left i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  transition: 500ms ease all;
+  color: #007bff;
+  font-size: 24px; }
+  @media (min-width: 500px) {
+    /* line 269, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .about .left i {
+      margin-left: 16px; } }
+  /* line 283, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .about .left i:hover {
+    background-color: #007bff;
+    border: transparent;
+    color: #fff; }
+
+/* line 294, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about-1 .left {
+  text-align: center; }
+  @media (min-width: 500px) {
+    /* line 294, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .about-1 .left {
+      text-align: initial; } }
+
+/* line 303, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about-1 .right,
+.about-3 .right {
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 900px) {
+    /* line 303, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .about-1 .right,
+    .about-3 .right {
+      align-items: start; } }
+
+/* line 312, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about-2 .left {
+  display: flex;
+  justify-content: center;
+  order: 2; }
+  @media (min-width: 900px) {
+    /* line 312, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .about-2 .left {
+      order: 1;
+      align-items: start; } }
+
+/* line 321, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about-2 .right {
+  order: 1; }
+  @media (min-width: 900px) {
+    /* line 321, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .about-2 .right {
+      order: 2; } }
+
+/* line 328, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.about-2, .about-3 {
+  margin-bottom: 20px; }
+
+/* line 333, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.services {
+  background-color: #ecf5ff; }
+  /* line 335, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .services .container {
+    max-width: 900px; }
+  /* line 338, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .services h2 {
+    text-align: center; }
+  /* line 341, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .services .grid {
+    max-width: 600px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    row-gap: 50px; }
+    @media (min-width: 800px) {
+      /* line 341, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .services .grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%; } }
+  /* line 352, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .services .flex-row {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px 0px rgba(68, 88, 144, 0.1);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+    background-color: #fff;
+    transition: 500ms ease all; }
+    /* line 361, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .services .flex-row:hover {
+      transform: translateY(-4px); }
+    /* line 364, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .services .flex-row h3 {
+      font-size: 18px; }
+    /* line 367, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .services .flex-row p {
+      font-size: 14px;
+      line-height: 1.7; }
+    /* line 371, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .services .flex-row i {
+      font-size: 64px;
+      position: absolute;
+      left: -10px;
+      display: flex;
+      align-items: center; }
+    /* line 378, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .services .flex-row .right {
+      margin-left: 40px; }
+
+/* line 385, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.why {
+  background-color: #004899;
+  color: #fff; }
+  /* line 389, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .why h2, .why h3 {
+    text-align: center;
+    color: white; }
+  /* line 393, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .why .flex-row {
+    margin-top: 60px;
+    gap: 60px; }
+  /* line 397, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .why .write-up {
+    margin: 0 auto;
+    max-width: 600px;
+    flex-direction: column; }
+    @media (min-width: 900px) {
+      /* line 397, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .why .write-up {
+        max-width: 100%;
+        flex-direction: row; } }
+  /* line 406, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .why .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+    background-color: #00458f;
+    padding: 40px;
+    border-radius: 12px;
+    transition: 500ms ease all; }
+    /* line 416, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .why .col:hover {
+      background-color: #003b7a; }
+      /* line 418, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .why .col:hover span {
+        border-bottom: #004899; }
+    /* line 422, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .why .col span {
+      max-width: 100%;
+      margin-top: auto;
+      padding-bottom: 4px;
+      border-bottom: 2p solid transparent; }
+    /* line 428, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .why .col i {
+      font-size: 50px; }
+    /* line 431, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .why .col h3 {
+      margin: 16px 0px; }
+    /* line 434, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .why .col p {
+      font-size: 14px;
+      margin-bottom: 32px; }
+  /* line 440, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .why .analytics {
+    flex-direction: column;
+    margin-top: 90px;
+    justify-content: space-evenly;
+    align-items: center; }
+    @media (min-width: 700px) {
+      /* line 440, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .why .analytics {
+        flex-direction: row; } }
+    /* line 448, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .why .analytics span {
+      display: block;
+      text-align: center; }
+    /* line 452, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .why .analytics .number {
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    /* line 457, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .why .analytics .title {
+      font-size: 14px; }
+
+/* line 466, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.photo-gallery h2 {
+  text-align: center; }
+
+/* line 469, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.photo-gallery .grid {
+  grid-template-columns: 1fr;
+  grid-auto-rows: 125px;
+  gap: 16px; }
+  @media (min-width: 600px) {
+    /* line 469, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .photo-gallery .grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 900px) {
+    /* line 469, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .photo-gallery .grid {
+      grid-template-columns: repeat(3, 1fr); } }
+
+/* line 482, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.photo-gallery .col {
+  position: relative; }
+  /* line 484, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .photo-gallery .col img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px; }
+  /* line 492, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .photo-gallery .col .bg {
+    border-radius: 12px;
+    transition: 5ms ease all;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  /* line 500, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .photo-gallery .col .content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease all;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  /* line 514, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .photo-gallery .col p:nth-child(1) {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 4px; }
+  /* line 519, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .photo-gallery .col p:nth-child(1) {
+    margin-bottom: 4px; }
+  /* line 522, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .photo-gallery .col i {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 50px;
+    background-color: #004289; }
+  /* line 531, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .photo-gallery .col:hover .bg {
+    background-color: rgba(0, 59, 122, 0.7); }
+  /* line 534, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .photo-gallery .col:hover .content {
+    opacity: 1; }
+
+/* line 539, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.photo-gallery .photo-1 {
+  grid-row: span 3; }
+
+/* line 542, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.photo-gallery .photo-2, .photo-gallery .photo-6,
+.photo-gallery .photo-7, .photo-gallery .photo-8 {
+  grid-row: span 4; }
+
+/* line 547, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.photo-gallery .photo-3, .photo-gallery .photo-4,
+.photo-gallery .photo-5, .photo-gallery .photo-9 {
+  grid-row: span 2; }
+
+/* line 556, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.testimonials {
+  background-color: #ecf6ff;
+  box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.1); }
+  /* line 559, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .testimonials h2 {
+    text-align: center; }
+  /* line 562, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .testimonials .owl-carousel {
+    max-width: 800px;
+    margin: 0 auto; }
+  /* line 566, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .testimonials img {
+    width: 120px !important;
+    height: 120px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    margin: 0 0 20px 0; }
+    @media (min-width: 600px) {
+      /* line 566, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .testimonials img {
+        margin: 0px 20px 0 0; } }
+  /* line 576, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .testimonials .flex-row {
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
+    @media (min-width: 600px) {
+      /* line 576, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .testimonials .flex-row {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: start; } }
+    /* line 585, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .testimonials .flex-row h2 {
+      color: #111;
+      margin: 0 0 8px 0;
+      font-size: 20px; }
+      @media (min-width: 600px) {
+        /* line 585, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+        .testimonials .flex-row h2 {
+          text-align: start; } }
+    /* line 593, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .testimonials .flex-row h4 {
+      font-weight: 300;
+      margin: 0 0 8px 0;
+      color: #999;
+      font-size: 14px; }
+    /* line 599, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .testimonials .flex-row p {
+      font-family: sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #444; }
+
+/* line 609, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.team {
+  background-color: #fff; }
+  /* line 611, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .team h2 {
+    text-align: center; }
+  /* line 614, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .team .flex-row {
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap; }
+  /* line 619, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .team .col {
+    position: relative;
+    flex-basis: 80%; }
+    @media (min-width: 600px) {
+      /* line 619, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .team .col {
+        flex-basis: 43%; } }
+    @media (min-width: 900px) {
+      /* line 619, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .team .col {
+        flex-basis: 21%; } }
+    /* line 629, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .team .col:hover .bg {
+      background-color: rgba(0, 123, 225, 0.5); }
+    /* line 632, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .team .col:hover .info {
+      opacity: 1;
+      margin-top: 0; }
+  /* line 638, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .team img {
+    display: block;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 50%; }
+  /* line 644, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .team .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 50%;
+    transition: 500ms ease all; }
+  /* line 652, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .team .info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 500ms ease all; }
+    /* line 666, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .team .info p:nth-child(1) {
+      font-size: 32px;
+      margin-bottom: 8px;
+      font-weight: 700; }
+    /* line 671, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .team .info p:nth-child(2) {
+      font-size: 23px;
+      font-style: itallic; }
+
+/* line 679, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.clients {
+  background-color: #ecf5ff;
+  box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.1); }
+  /* line 682, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .clients h2 {
+    text-align: center; }
+  /* line 685, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .clients .flex-row {
+    flex-wrap: wrap; }
+  /* line 688, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .clients .col {
+    max-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #d6eaff;
+    border-right: 1px solid #d6eaff;
+    border-left: 1px solid #d6eaff;
+    background-color: #fff;
+    flex-basis: 100%;
+    padding: 20px; }
+    @media (min-width: 500px) {
+      /* line 688, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .clients .col {
+        flex-basis: 100%;
+        border-left: block; } }
+    @media (min-width: 900px) {
+      /* line 688, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .clients .col {
+        flex-basis: 20%; } }
+    /* line 709, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .clients .col:hover img {
+      transform: scale(1.2); }
+    /* line 714, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .clients .col img {
+      max-width: 80%;
+      height: auto;
+      transition: 500ms ease all; }
+  /* line 720, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .clients .col:nth-child(1) {
+    margin-top: 1px solid #d6eaff; }
+  @media (min-width: 500px) {
+    /* line 723, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .clients .col:nth-child(2) {
+      margin-top: 1px solid #d6eaff; } }
+  @media (min-width: 900px) {
+    /* line 728, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .clients .col:nth-child(3),
+    .clients .col:nth-child(4) {
+      margin-top: 1px solid #d6eaff; } }
+  @media (min-width: 900px) {
+    /* line 734, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .clients .col:nth-child(1),
+    .clients .col:nth-child(5) {
+      margin-left: 1px solid #d6eaff; } }
+
+/* line 744, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.contact-us h2 {
+  text-align: center; }
+
+/* line 747, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.contact-us p {
+  text-align: center;
+  margin-bottom: 60px; }
+
+/* line 751, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.contact-us input, .contact-us button {
+  display: block; }
+
+/* line 754, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.contact-us input, .contact-us textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da; }
+  /* line 758, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .contact-us input:focus, .contact-us textarea:focus {
+    outline: none; }
+
+/* line 762, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.contact-us input {
+  margin-bottom: 16px; }
+
+/* line 765, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.contact-us textarea {
+  height: 100%;
+  resize: none; }
+
+/* line 770, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.contact-us form {
+  max-width: 700px;
+  margin: 0 auto; }
+
+/* line 774, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.contact-us .flex-row {
+  flex-direction: column; }
+  @media (min-width: 500px) {
+    /* line 774, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .contact-us .flex-row {
+      flex-direction: row;
+      gap: 32px; } }
+
+/* line 781, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.contact-us .btn {
+  margin-top: 16px;
+  font-weight: 400px; }
+  /* line 784, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .contact-us .btn:hover {
+    color: #007bff;
+    border-color: #007bff; }
+
+/* line 791, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.modal-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+  /* line 802, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .modal-wrap .modal {
+    text-align: center;
+    padding: 50px;
+    border-radius: 8px;
+    background-color: #fff; }
+    /* line 808, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .modal-wrap .modal img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 15px; }
+    /* line 813, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .modal-wrap .modal P:nth-child(2) {
+      font-size: 24px;
+      margin-bottom: 8px; }
+    /* line 817, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+    .modal-wrap .modal .btn {
+      margin-top: 24px; }
+      /* line 819, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+      .modal-wrap .modal .btn:hover {
+        color: #007bff;
+        border-color: #007bff; }
+
+/* line 828, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+footer {
+  color: #fff;
+  background-color: #004a99; }
+  /* line 832, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  /* line 837, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  footer ul {
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    justify-content: center; }
+  /* line 842, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  footer li {
+    padding: 0 15px;
+    margin-bottom: 16px; }
+  /* line 847, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  footer a {
+    font-size: 14px;
+    font-weight: 500px;
+    color: #fff; }
+  /* line 852, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  footer i {
+    cursor: pointer;
+    font-size: 30px; }
+  /* line 856, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  footer p {
+    text-align: center; }
+
+/* line 862, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+/* line 866, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.flex-row {
+  display: flex; }
+
+/* line 869, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 45px;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: 500ms ease all; }
+  /* line 879, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .btn:hover {
+    background-color: transparent;
+    border-color: #fff; }
+
+/* line 884, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.btn-light {
+  background-color: transparent;
+  border-color: #fff; }
+  /* line 887, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+  .btn-light:hover {
+    background-color: #007bff;
+    border-color: transparent; }
+
+/* line 892, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.grid {
+  display: grid; }
+
+/* line 896, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.pink-text {
+  color: #ff689b; }
+
+/* line 900, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.yellow-text {
+  color: #e9bf06; }
+
+/* line 904, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.teal-text {
+  color: #3fcdc7; }
+
+/* line 908, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.green-text {
+  color: #41cf2e; }
+
+/* line 912, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.limeGreen-text {
+  color: #d6ff22; }
+
+/* line 916, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.blue-text {
+  color: #4680ff; }
+
+/* line 919, ../../full-modern-wesbite-main/full-modern-wesbite-main/scss/style.scss */
+.display-none {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
